@@ -118,7 +118,7 @@ public class Rally_ChangeUsernames {
 			    // Attempt update of UserID
 			    UpdateResponse updateResponse = restApi.update(updateUserIDRequest);
 				    
-				if (updateResponse.wasSuccessful()) {
+			    if (updateResponse.wasSuccessful()) {
 				System.out.println("Successfully updated UserName: " + existUsername +
 						" to: " + newUsername);
 				System.out.println(String.format("Updated %s", updateResponse.getObject().get("_ref").getAsString()));
