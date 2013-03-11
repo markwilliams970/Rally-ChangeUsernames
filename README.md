@@ -29,6 +29,15 @@ Rally-ChangeUsernames
     
     // CSV file containing User Mapping
     String userMappingFile = "C:\\Users\\username\\Documents\\RallyUtilities\\ChangeUsernames\\UserMappingTemplate.csv";
+    
+</pre>
+
+- Requires input file specifying desired change in UserID's, formatted as follows (example):
+<pre>
+    ExistUsername,NewUsername
+    user1@company.com,userOne@company.com
+    user2@company.com,userTwo@company.com
+    user3@company.com,userThree@company.com
 </pre>
 
 - Script will iterate through all UserIDs listed in userMappingFile and attemt to update to the specified new UserID. The Rally user running this code must have Subscription Administrator privileges.
